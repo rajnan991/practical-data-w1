@@ -8,7 +8,7 @@
 import scrapy
 
 
-class flipkartItem(scrapy.Item):
+class FlipkartItem(scrapy.Item):
     # define the fields for your item here like:
     product_name = scrapy.Field()
     product_price = scrapy.Field()
@@ -19,4 +19,3 @@ class flipkartItem(scrapy.Item):
     product_battery = scrapy.Field()
     
     
-    pass
