@@ -32,7 +32,7 @@ class FlipkartspiderSpider(scrapy.Spider):
 
         next_page = 'https://www.flipkart.com/mobiles/mi~brand/pr?sid=tyy%2C4io&otracker=nmenu_sub_Electronics_0_Mi&page=' + str(FlipkartspiderSpider.page_number) + ''
         if FlipkartspiderSpider.page_number <= 10:
-            FlipkartspiderSpider.page_number = 1
+            FlipkartspiderSpider.page_number+= 1
             yield response.follow(next_page, callback =self.parse)
          
    
